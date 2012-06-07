@@ -4,3 +4,18 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-EditPlusColor"]
+	path = bundle/vim-EditPlusColor
+	url = https://github.com/vim-scripts/EditPlus
+[submodule "bundle/vim-htmlFileCompletion"]
+	path = bundle/vim-htmlFileCompletion
+	url = git://github.com/vim-scripts/html_FileCompletion
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vim-python"]
+	path = bundle/vim-python
+	url = https://github.com/vim-scripts/python.vim.git
+[submodule "bundle/vim-zencoding"]
+	path = bundle/vim-zencoding
+	url = https://github.com/mattn/zencoding-vim.git
