@@ -4,55 +4,70 @@ VIM Installation
 
  first install full vim version, on ubuntu 
 
- ~~~~~~~~~~~{.bash}
+~~~~~~~~~~~~~~~~~~~~~~~~~~{.bash}
  sudo apt-get install vim
- ~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
  Git Vim Setting
- =================
+==================
 
-1. create bundle folder
-	mkdir -p ~/.vim/bundle
-2. init git repos
-	cd ~/.vim
-	git init
-	touch README
-	git add README
-	git add .
-	git commit -m "first commit"
-3. link to github
-	git remote add origin https://github.com/windfire-cd/dotvim.git
-	git push origin master
+1. create bundle folder:
 
-4. install vim-pathogen
-	git submodule add git://github.com/tope/vim-pathogen.giv bundle/vim-pathogen
-	echo -e "runtime bunlde/vim-pathogen/autoload/pathogen.vim pathogen#infect()\n" >> ~/.vim/.vimrc
-	if you want to use old vimrc, make sure these two lines be added at the end of vimrc
+		mkdir -p ~/.vim/bundle
+
+2. init git repos:
+
+		cd ~/.vim
+		git init
+		touch README
+		git add README
+		git add .
+		git commit -m "first commit"
+
+3. link to github:
+
+		git remote add origin https://github.com/windfire-cd/dotvim.git
+		git push origin master
+
+4. install vim-pathogen:
+
+		git submodule add git://github.com/tope/vim-pathogen.giv bundle/vim-pathogen
+		echo -e "runtime bunlde/vim-pathogen/autoload/pathogen.vim pathogen#infect()\n" >> ~/.vim/.vimrc
+	
+	if you want to use old vimrc, make sure these two lines be added at the end of vimrc:
+
 		runtime bundle/vim-pathogen/autoload/pathogen.vim
 		call pathogen#infect()
-5. link to vimrc
-	ln -s ~/.vim/vimrc ~/.vimrc
+
+5. link to vimrc:
+
+		ln -s ~/.vim/vimrc ~/.vimrc
 
 6. install vim script
-use git to find the url of vim-script,finding url is "https://github.com/vim-scripts"
-for example, we want to install vim-markdown
-	git submodule add git://github.com/tpope/vim-markdown.git bundle/vim-markdown
+	use git to find the url of vim-script,finding url is "https://github.com/vim-scripts"
+	for example, we want to install vim-markdown:
 
-7. update script
-	cd ~/.vim/bundle/vim-markdown #your script folder
-	git pull origin master
+		git submodule add git://github.com/tpope/vim-markdown.git bundle/vim-markdown
 
-8. update all scripts
-	cd ~/.vim
-	git submodule foreach git pull origin master
+7. update script:
 
-8. delete script
-	git rm bundle/vim-markdown #your script name
+		cd ~/.vim/bundle/vim-markdown #your script folder
+		git pull origin master
 
-9. push folder to github
-	cd ~/.vim
-	git push origin master
+8. update all scripts:
+
+		cd ~/.vim
+		git submodule foreach git pull origin master
+
+8. delete script:
+
+		git rm bundle/vim-markdown #your script name
+
+9. push folder to github:
+
+		cd ~/.vim
+		git push origin master
 
 
 Get Vim Setting from Github
@@ -67,4 +82,5 @@ You can pull all vim-scripts and vimrc through git in other computer
 	git submodule init
 	git submodule update
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
