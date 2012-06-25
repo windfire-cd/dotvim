@@ -1,3 +1,17 @@
+
+VIM Installation
+====================
+
+ first install full vim version, on ubuntu 
+
+ ~~~~~~~~~~~{.bash}
+ sudo apt-get install vim
+ ~~~~~~~~~~~
+
+
+ Git Vim Setting
+ =================
+
 1. create bundle folder
 	mkdir -p ~/.vim/bundle
 2. init git repos
@@ -41,10 +55,16 @@ for example, we want to install vim-markdown
 	git push origin master
 
 
+Get Vim Setting from Github
+===============================
 
 You can pull all vim-scripts and vimrc through git in other computer
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.bash}
 	git clone http://github.com/windire-cd/dotvim.git ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
 	cd ~/.vim
 	git submodule init
 	git submodule update
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
