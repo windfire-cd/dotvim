@@ -19,3 +19,6 @@
 [submodule "bundle/vim-zencoding"]
 	path = bundle/vim-zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "bundle/vim-fencview"]
+	path = bundle/vim-fencview
+	url = git://github.com/vim-scripts/FencView.vim.git
