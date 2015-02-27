@@ -48,11 +48,13 @@
 	syntax on
 	syntax enable
 	"========================================"
-	if has("vms")
-	set nobackup      " do not keep a backup file, use versions instead
-	else
-	set backup        " keep a backup file
-	endif
+	"if has("vms")
+	"set nobackup      " do not keep a backup file, use versions instead
+	"else
+	"set backup        " keep a backup file
+	"endif
+	set nobackup " no back up file *.ext~
+	set nowritebackup " no writable back up
 	" Put these in an autocmd group, so that we can delete them easily.
 	"===================autocmd====================="
 	augroup vimrcEx
